@@ -48,6 +48,37 @@
   .quote{padding:76px 24px}.quote blockquote{font-size:24px}.cta{padding-bottom:80px}
 }
 
+/* Independent phone composition: never let mobile inherit desktop proportions */
+@media (min-width:320px) and (max-width:430px){
+  html,body,#root,.app{width:100%;min-width:320px;max-width:100%;overflow-x:hidden}
+  header{width:100%;position:sticky}
+  .hero,.hero-copy,.hero-image{width:100%;min-height:740px;height:740px}
+  .hero-copy{padding:40px 22px 56px;justify-content:flex-end}
+  .hero-copy h1{font-size:clamp(46px,13.5vw,58px);max-width:350px;letter-spacing:-.075em}
+  .hero-copy>p{max-width:320px;font-size:13px;line-height:1.65}
+  .hero-actions{flex-direction:column;align-items:flex-start;gap:16px;margin-top:28px}
+  .hero-actions .gold{min-height:48px;padding:0 20px}
+  .hero-actions .text-link{min-height:34px}
+  .ticker{width:100%;height:52px}
+  .intro,.services,.work,.cta{width:100%;padding:88px 22px}
+  .intro{min-height:520px}
+  .intro>div+div{margin-top:42px}
+  .intro h2,.service-head h2,.work h2,.cta h2{font-size:42px;line-height:1.02}
+  .intro p{font-size:14px;line-height:1.75}
+  .services{min-height:800px}
+  .service-head{margin-bottom:38px}
+  .service-head>p{font-size:14px;line-height:1.7;max-width:330px}
+  .service-grid article{min-height:228px;padding:25px 21px;margin-bottom:12px}
+  .service-grid h3{font-size:23px;margin:38px 0 13px}
+  .service-grid p{font-size:13px;line-height:1.6;max-width:290px;margin-bottom:24px}
+  .work{min-height:800px}
+  .work-head{margin-bottom:34px}
+  .gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .tile,.tile:first-child,.tile:nth-child(4){aspect-ratio:1/1.08}
+  .quote{padding:92px 22px}
+  .cta{min-height:480px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
+}
+
 /* Premium mobile art direction */
 .hero-image picture{display:block;width:100%;height:100%}
 @media(max-width:1100px){
