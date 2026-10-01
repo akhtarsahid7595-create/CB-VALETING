@@ -79,6 +79,39 @@
   .cta{min-height:480px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
 }
 
+/* Device-emulation safe mobile proportions (some browsers report a wider CSS viewport while rendering a narrow phone frame). */
+@media (max-width:1100px){
+  header{height:84px;padding-inline:7vw}
+  .hero,.hero-copy,.hero-image{min-height:900px;height:900px}
+  .hero-copy{padding:96px 9vw 84px;justify-content:flex-end}
+  .hero-copy h1{font-size:clamp(64px,8vw,92px);line-height:.94;max-width:720px;margin:24px 0}
+  .hero-copy>p{font-size:17px;line-height:1.65;max-width:520px}
+  .hero-actions{margin-top:34px;gap:28px}
+  .hero-actions .gold{min-height:56px;padding-inline:24px}
+  .ticker{height:70px}
+  .intro,.services,.work,.cta{padding-block:120px}
+  .intro{min-height:620px}
+  .services{min-height:900px}
+  .service-grid article{min-height:300px;padding:34px}
+  .service-grid h3{font-size:30px;margin-top:70px}
+  .service-grid p{font-size:16px;max-width:480px}
+  .work{min-height:900px}
+}
+
+@media (max-width:600px){
+  header{height:72px;padding-inline:22px}
+  .hero,.hero-copy,.hero-image{min-height:760px;height:760px}
+  .hero-copy{padding:48px 24px 58px}
+  .hero-copy h1{font-size:clamp(48px,13vw,62px);max-width:360px}
+  .hero-copy>p{font-size:14px;max-width:320px}
+  .ticker{height:54px}
+  .intro,.services,.work,.cta{padding-block:88px}
+  .intro{min-height:560px}.services{min-height:820px}.work{min-height:820px}
+  .service-grid article{min-height:240px;padding:25px 21px}
+  .service-grid h3{font-size:23px;margin-top:38px}
+  .service-grid p{font-size:13px}
+}
+
 /* Premium mobile art direction */
 .hero-image picture{display:block;width:100%;height:100%}
 @media(max-width:1100px){
