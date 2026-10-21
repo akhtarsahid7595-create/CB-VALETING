@@ -105,35 +105,28 @@ const servicesData = [
 
 const galleryItems = [
   {
-    src: '/work-jaguar-vd-detailing.png',
-    title: 'Jaguar Showroom Finish',
-    caption: 'Official VD Detailing show plate finish with deep paint gloss and swirl elimination in Killarney',
-    featured: true
+    src: '/work-jaguar-clean.png',
+    alt: 'Jaguar showroom finish with official VD Detailing show plate in Killarney'
   },
   {
-    src: '/work-mercedes-killarney.png',
-    title: 'Dirty to Flawless in Killarney',
-    caption: 'Mercedes-Benz C-Class full exterior safe wash, decontaminated arches & mirror gloss'
+    src: '/work-mercedes-clean.png',
+    alt: 'Mercedes-Benz C-Class mirror reflection after safe wash in Killarney'
   },
   {
-    src: '/work-interior-mold-rescue.png',
-    title: 'Interior Mold & Cabin Rescue',
-    caption: 'Deep steam extraction, upholstery disinfection & VD Detailing protective floor mats'
+    src: '/work-interior-clean.png',
+    alt: 'Interior cockpit detailing with official VD Detailing protective mats'
   },
   {
-    src: '/work-hyundai-tucson.png',
-    title: 'Metallic Blue Tucson Detail',
-    caption: 'Multi-stage paint decontamination, high-gloss wax sealant & slick tyre dressing'
+    src: '/work-hyundai-clean.png',
+    alt: 'Metallic blue Hyundai Tucson SUV deep gloss and tyre dressing'
   },
   {
-    src: '/work-snow-foam.png',
-    title: 'MJJC Pro Snow Foam Pre-Wash',
-    caption: 'Dense pH-neutral foam encapsulation lifting road grime safely before contact wash'
+    src: '/work-snow-foam-clean.png',
+    alt: 'MJJC Pro snow foam pre-wash lifting road grime safely'
   },
   {
-    src: '/work-alloy-wheel.png',
-    title: 'Alloy Wheel & Tyre Rejuvenation',
-    caption: 'Brake dust removal, acid-free wheel cleaning, and rich satin tyre dressing'
+    src: '/work-alloy-clean.png',
+    alt: 'Alloy wheel brake dust decontamination and tyre dressing'
   }
 ];
 
@@ -246,67 +239,71 @@ function App() {
       <main id="top">
         {/* Hero Section */}
         <section className="hero-section">
-          <div className="hero-bg-wrapper">
+          {/* Desktop Background Banner */}
+          <div className="hero-bg-wrapper desktop-hero-bg">
             <img 
-              src="/work-jaguar-vd-detailing.png" 
-              alt="VD Detailing Jaguar finished with showroom shine in Killarney" 
+              src="/hero-banner.jpg" 
+              alt="Luxury sports car being detailed to mirror finish in studio" 
               className="hero-bg-image" 
             />
             <div className="hero-gradient-overlay"></div>
           </div>
 
-          <div className="hero-content">
-            <div className="hero-eyebrow">
-              <span className="dot-pulse"></span>
-              CERTIFIED & INSURED MOBILE DETAILING · KILLARNEY · TRALEE · KERRY
-            </div>
-
-            <h1 className="hero-title">
-              Showroom finish.<br />
-              <em>Delivered to your doorstep.</em>
-            </h1>
-
-            <p className="hero-lead">
-              Professional mobile vehicle care brought directly to your home or workplace across Killarney, Tralee, and County Kerry. Safe scratch-free wash methods, deep interior steam extraction, and long-lasting paint protection.
-            </p>
-
-            <div className="hero-cta-group">
-              <button className="btn-primary hero-btn-main" onClick={() => handleOpenBooking()}>
-                Book Your Valet ↗
-              </button>
-              <a href={PHONE_TEL} className="btn-secondary hero-call-btn">
-                <Phone size={16} /> Call {PHONE_DISPLAY}
-              </a>
-              <a href="#work" className="hero-work-link">
-                View our work <span>↓</span>
-              </a>
-            </div>
-
-            {/* Mobile / Local Trust Proof Bar */}
-            <div className="hero-trust-bar">
-              <div className="trust-item">
-                <Car size={16} className="trust-icon" />
-                <span><strong>We Come To You</strong> at Home or Work</span>
-              </div>
-              <div className="trust-divider">•</div>
-              <div className="trust-item">
-                <ShieldCheck size={16} className="trust-icon" />
-                <span><strong>Safe Wash</strong> Scratch-Free Methods</span>
-              </div>
-              <div className="trust-divider">•</div>
-              <div className="trust-item">
-                <MapPin size={16} className="trust-icon" />
-                <span>Killarney & Tralee Covered</span>
+          <div className="hero-container">
+            {/* Mobile Dedicated Visible Banner */}
+            <div className="hero-mobile-banner">
+              <img 
+                src="/hero-banner.jpg" 
+                alt="VD Detailing studio banner" 
+                className="hero-mobile-banner-img" 
+              />
+              <div className="mobile-banner-badge">
+                <Sparkles size={12} />
+                <span>Certified Mobile Detailing Unit</span>
               </div>
             </div>
-          </div>
 
-          {/* Floating Hero Badge */}
-          <div className="hero-floating-badge">
-            <img src="/vd-logo.png" alt="VD Detailing badge" />
-            <div className="badge-details">
-              <strong>Killarney · Tralee · Co. Kerry</strong>
-              <span>Certified Mobile Detailing Unit</span>
+            <div className="hero-content">
+              <div className="hero-eyebrow">
+                <span className="dot-pulse"></span>
+                <span>CERTIFIED & INSURED MOBILE DETAILING · KERRY</span>
+              </div>
+
+              <h1 className="hero-title">
+                Showroom finish.<br />
+                <em>Delivered to your doorstep.</em>
+              </h1>
+
+              <p className="hero-lead">
+                Professional mobile vehicle care brought directly to your home or workplace across Killarney, Tralee, and County Kerry. Safe scratch-free wash methods, deep interior steam extraction, and long-lasting paint protection.
+              </p>
+
+              <div className="hero-cta-group">
+                <button className="btn-primary hero-btn-main" onClick={() => handleOpenBooking()}>
+                  Book Your Valet ↗
+                </button>
+                <a href={PHONE_TEL} className="btn-secondary hero-call-btn">
+                  <Phone size={16} /> Call {PHONE_DISPLAY}
+                </a>
+              </div>
+
+              {/* Mobile / Local Trust Proof Bar */}
+              <div className="hero-trust-bar">
+                <div className="trust-item">
+                  <Car size={16} className="trust-icon" />
+                  <span><strong>We Come To You</strong> at Home or Work</span>
+                </div>
+                <div className="trust-divider">•</div>
+                <div className="trust-item">
+                  <ShieldCheck size={16} className="trust-icon" />
+                  <span><strong>Safe Wash</strong> Scratch-Free</span>
+                </div>
+                <div className="trust-divider">•</div>
+                <div className="trust-item">
+                  <MapPin size={16} className="trust-icon" />
+                  <span>Killarney & Tralee Covered</span>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -635,21 +632,13 @@ function App() {
 
           <div className="gallery-mosaic">
             {galleryItems.map((item, index) => (
-              <div 
-                key={index} 
-                className={`gallery-card ${item.featured ? 'featured-card' : ''}`}
-              >
+              <div key={index} className="gallery-card">
                 <img 
                   src={item.src} 
-                  alt={item.title} 
+                  alt={item.alt} 
                   className="gallery-img" 
                   loading="lazy" 
                 />
-                <div className="gallery-overlay">
-                  <span className="gallery-badge">{item.featured ? 'Client Spotlight' : 'VD Detailing'}</span>
-                  <h4 className="gallery-card-title">{item.title}</h4>
-                  <p className="gallery-card-caption">{item.caption}</p>
-                </div>
               </div>
             ))}
           </div>
