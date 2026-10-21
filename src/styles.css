@@ -1,20 +1,20 @@
 /* ==========================================================================
-   INISHOWEN VALETING — BRAND STYLESHEET
+   VD DETAILING — BRAND STYLESHEET
    Colors: Obsidian Navy, Electric Cyan, Crisp White, Platinum Slate
    Typography: Playfair Display + DM Sans + Plus Jakarta Sans
    ========================================================================== */
 
 :root {
-  --navy-darkest: #05080E;
-  --navy-deep: #0B1321;
-  --navy-card: #111C2E;
-  --navy-light: #1A2840;
+  --navy-darkest: #07070A;
+  --navy-deep: #0D0E12;
+  --navy-card: #13141A;
+  --navy-light: #1C1D26;
   
-  --cyan-vibrant: #00D2FF;
-  --cyan-primary: #00B4D8;
-  --cyan-deep: #0077B6;
-  --cyan-tint: rgba(0, 210, 255, 0.12);
-  --cyan-border: rgba(0, 210, 255, 0.3);
+  --cyan-vibrant: #F59E0B;
+  --cyan-primary: #D4AF37;
+  --cyan-deep: #B8860B;
+  --cyan-tint: rgba(212, 175, 55, 0.12);
+  --cyan-border: rgba(212, 175, 55, 0.3);
 
   --white: #FFFFFF;
   --off-white: #F8FAFC;
@@ -33,7 +33,7 @@
   --shadow-sm: 0 2px 8px rgba(11, 19, 33, 0.06);
   --shadow-md: 0 8px 24px rgba(11, 19, 33, 0.08);
   --shadow-lg: 0 16px 36px rgba(11, 19, 33, 0.12);
-  --shadow-cyan: 0 8px 24px rgba(0, 210, 255, 0.25);
+  --shadow-cyan: 0 8px 24px rgba(212, 175, 55, 0.25);
 
   --radius-sm: 6px;
   --radius-md: 12px;
@@ -102,7 +102,7 @@ button {
   font-size: 11px;
   letter-spacing: 0.6px;
   padding: 8px 5vw;
-  border-bottom: 1px solid rgba(0, 210, 255, 0.15);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.15);
 }
 
 .top-banner-inner {
@@ -185,7 +185,7 @@ button {
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid var(--cyan-primary);
-  box-shadow: 0 0 10px rgba(0, 180, 216, 0.3);
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
 }
 
 .brand-text {
@@ -360,10 +360,10 @@ button {
   letter-spacing: 2px;
   font-family: var(--font-accent);
   margin-bottom: 22px;
-  background: rgba(0, 210, 255, 0.1);
+  background: rgba(212, 175, 55, 0.1);
   padding: 6px 14px;
   border-radius: var(--radius-full);
-  border: 1px solid rgba(0, 210, 255, 0.25);
+  border: 1px solid rgba(212, 175, 55, 0.25);
 }
 
 .dot-pulse {
@@ -483,7 +483,7 @@ button {
   z-index: 2;
   background: rgba(11, 19, 33, 0.85);
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(0, 210, 255, 0.3);
+  border: 1px solid rgba(212, 175, 55, 0.3);
   border-radius: var(--radius-md);
   padding: 12px 18px 12px 14px;
   display: flex;
@@ -552,7 +552,7 @@ button {
 }
 
 /* ==========================================================================
-   THE INISHOWEN STANDARD (INTRO)
+   THE VD DETAILING STANDARD (INTRO)
    ========================================================================== */
 .standard-section {
   padding: 110px 5vw 90px;
@@ -656,7 +656,7 @@ button {
 .pillar-card:hover {
   transform: translateY(-4px);
   border-color: var(--cyan-primary);
-  box-shadow: 0 12px 28px rgba(0, 180, 216, 0.12);
+  box-shadow: 0 12px 28px rgba(212, 175, 55, 0.12);
 }
 
 .pillar-icon-box {
@@ -743,8 +743,8 @@ button {
 .service-card.is-popular {
   border-top: 4px solid var(--cyan-vibrant);
   background: #FFFFFF;
-  box-shadow: 0 10px 30px rgba(0, 180, 216, 0.15);
-  border-color: rgba(0, 180, 216, 0.4);
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.15);
+  border-color: rgba(212, 175, 55, 0.4);
 }
 
 .popular-badge {
@@ -959,7 +959,7 @@ button {
 }
 
 .highlight-row {
-  background: rgba(0, 210, 255, 0.05);
+  background: rgba(212, 175, 55, 0.05);
   padding: 12px 10px;
   border-radius: 4px;
 }
@@ -972,7 +972,7 @@ button {
 /* Extras Card */
 .pricing-extras-card {
   background: var(--navy-card);
-  border: 1px solid rgba(0, 210, 255, 0.25);
+  border: 1px solid rgba(212, 175, 55, 0.25);
   border-radius: var(--radius-md);
   padding: 32px;
   margin-bottom: 24px;
@@ -1188,7 +1188,7 @@ button {
   border-radius: 50%;
   overflow: hidden;
   border: 4px solid var(--cyan-primary);
-  box-shadow: 0 16px 40px rgba(0, 180, 216, 0.25);
+  box-shadow: 0 16px 40px rgba(212, 175, 55, 0.25);
   background: var(--navy-darkest);
 }
 
@@ -1323,7 +1323,7 @@ button {
   align-items: center;
   gap: 8px;
   background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(0, 210, 255, 0.2);
+  border: 1px solid rgba(212, 175, 55, 0.2);
   color: var(--slate-200);
   font-size: 13px;
   padding: 8px 16px;
@@ -1590,7 +1590,7 @@ button {
   background: rgba(11, 19, 33, 0.96);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-top: 1px solid rgba(0, 210, 255, 0.3);
+  border-top: 1px solid rgba(212, 175, 55, 0.3);
   padding: 10px 16px;
   gap: 12px;
 }
@@ -1739,7 +1739,7 @@ button {
 .form-group input:focus,
 .form-group select:focus {
   border-color: var(--cyan-vibrant);
-  box-shadow: 0 0 10px rgba(0, 210, 255, 0.2);
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
 }
 
 .form-row {

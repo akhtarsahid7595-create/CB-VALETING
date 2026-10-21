@@ -35,124 +35,131 @@ const InstagramIcon = ({ size = 18, color = "currentColor", className = "" }) =>
   </svg>
 );
 
-const PHONE_DISPLAY = '087 951 2170';
-const PHONE_TEL = 'tel:0879512170';
-const WHATSAPP_LINK = 'https://wa.me/353879512170?text=Hi%20Inishowen%20Valeting%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%20valet.';
-const INSTAGRAM_URL = 'https://www.instagram.com/inishowenvaleting/';
+const PHONE_DISPLAY = '087 442 7249';
+const PHONE_TEL = 'tel:0874427249';
+const WHATSAPP_LINK = 'https://wa.me/353874427249?text=Hi%20VD%20Detailing%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%20valet.';
+const INSTAGRAM_URL = 'https://www.instagram.com/_vd_detailing/';
 
 const servicesData = [
   {
     no: '01',
-    title: 'Exterior Detailing',
-    desc: 'Multi-stage safe wash, active snow foam, iron decontamination, alloy deep clean, tyre dressing, and high-gloss ceramic spray sealant.',
-    priceFrom: 'From €30',
-    tag: 'Exterior Focus',
+    title: 'Exterior Safe Wash',
+    desc: 'Pre-wash & active snow foam, deep wheel & arch cleaning, 2-bucket hand wash, tar & iron decontamination, spray wax, and tyre dressing.',
+    priceFrom: 'From €40',
+    tag: 'Scratch-Free Wash',
     features: [
-      'pH-neutral snow foam pre-wash',
-      'Two-bucket safe contact wash',
-      'Wheel barrels & faces decontaminated',
-      'Hydrophobic paint sealant applied'
+      'Pre-wash & snow foam (scratch-free)',
+      'Deep wheel & arch cleaning',
+      'Two-bucket safe contact hand wash',
+      'Tar & iron fallout decontamination',
+      'Spray wax (shine & protection)',
+      'Tyres dressed to satin finish'
     ]
   },
   {
     no: '02',
-    title: 'Interior Deep Reset',
-    desc: 'Thorough cabin restoration. Deep extraction shampoo on seats and carpets, steam sanitation, leather conditioning, and crystal-clear glass inside.',
-    priceFrom: 'From €55',
+    title: 'Interior Deep Clean',
+    desc: 'Cabin restoration to fresh and like new. Full vacuum, upholstery shampoo, leather clean & care, steam sanitation, and plastics dressed.',
+    priceFrom: 'From €80',
     tag: 'Cabin Restoration',
     features: [
-      'Full vacuum including boot & crevices',
-      'Upholstery & mat shampoo extraction',
-      'Dashboard & door trims UV protected',
-      'Odour elimination & fresh scent'
+      'Full vacuum (seats, mats, boot)',
+      'Upholstery shampoo / leather care',
+      'Steam cleaning & stain removal',
+      'Plastics cleaned & dressed',
+      'Glass polished inside & out',
+      'Odour elimination (+€20 pet hair)'
     ]
   },
   {
     no: '03',
-    title: 'Mini Valet',
-    desc: 'The ideal routine maintenance refresh. Keeps your vehicle fresh and spotless between deep details, inside and out.',
-    priceFrom: 'From €45',
-    tag: 'Maintenance',
+    title: 'VD Full Valet',
+    desc: 'The ultimate reset for your car! Combines everything from Exterior Safe Wash & Interior Deep Clean plus deep door jambs and extra gloss.',
+    priceFrom: 'From €110',
+    tag: 'Best Value',
+    popular: true,
     features: [
-      'Exterior safe foam wash & dry',
-      'Wheel faces cleaned & tyres dressed',
-      'Full interior vacuum & dust down',
-      'Glass cleaned inside & out'
+      'Includes everything from Exterior Safe Wash',
+      'Includes everything from Interior Deep Clean',
+      'Deep door jamb & shut cleaning',
+      'Extra high-gloss protective finish',
+      '100% Satisfaction Guarantee',
+      'Requires water tap & power access'
     ]
   },
   {
     no: '04',
-    title: 'Full Signature Valet',
-    desc: 'Our comprehensive bumper-to-bumper transformation. Combines meticulous exterior detailing with an intensive interior deep clean.',
-    priceFrom: 'From €80',
-    tag: 'Most Popular',
-    popular: true,
+    title: 'Paint Correction & Polishing',
+    desc: 'Bring back the ultimate gloss! Swirl mark removal, deep scratch correction, headlight restoration, and long-lasting ceramic coating.',
+    priceFrom: 'From €140',
+    tag: 'Ultimate Gloss',
     features: [
-      'Complete exterior multi-stage wash & gloss',
-      'Full interior wet vacuum & steam clean',
-      'Leather & fabric protection applied',
-      'Long-lasting paint protection finish'
+      'Headlight restoration (from €40)',
+      '1-Step polish (removes swirls & adds shine)',
+      '2-Step polish (deep scratch removal: from €250)',
+      'Ceramic coating protection (+€80 extra)',
+      'Free quote tailored to vehicle paint condition'
     ]
   }
 ];
 
 const galleryItems = [
   {
-    src: '/bmw-gloss.png',
-    title: 'High-Gloss Mirror Finish',
-    caption: 'Recent customer BMW 4 Series coupe detailed to showroom gloss',
+    src: '/work-jaguar-vd-detailing.png',
+    title: 'Jaguar Showroom Finish',
+    caption: 'Official VD Detailing show plate finish with deep paint gloss and swirl elimination in Killarney',
     featured: true
   },
   {
-    src: '/inishowen-foam.jpg',
-    title: 'Safe Snow Foam Pre-Wash',
-    caption: 'Lifting road grit and grime safely without scratching'
+    src: '/work-mercedes-killarney.png',
+    title: 'Dirty to Flawless in Killarney',
+    caption: 'Mercedes-Benz C-Class full exterior safe wash, decontaminated arches & mirror gloss'
   },
   {
-    src: '/inishowen-interior.jpg',
-    title: 'Immaculate Cockpit Detailing',
-    caption: 'Dust-free vents, matte leather finish & sanitized interior'
+    src: '/work-interior-mold-rescue.png',
+    title: 'Interior Mold & Cabin Rescue',
+    caption: 'Deep steam extraction, upholstery disinfection & VD Detailing protective floor mats'
   },
   {
-    src: '/work-wheel.png',
-    title: 'Wheel & Caliper Decontamination',
-    caption: 'Brake dust removal and durable tyre dressing'
+    src: '/work-hyundai-tucson.png',
+    title: 'Metallic Blue Tucson Detail',
+    caption: 'Multi-stage paint decontamination, high-gloss wax sealant & slick tyre dressing'
   },
   {
-    src: '/work-after-exterior.png',
-    title: 'Paint Clarity & Reflection',
-    caption: 'Swirl-free wash finish with hydrophobic water beading'
+    src: '/work-snow-foam.png',
+    title: 'MJJC Pro Snow Foam Pre-Wash',
+    caption: 'Dense pH-neutral foam encapsulation lifting road grime safely before contact wash'
   },
   {
-    src: '/work-after-interior.png',
-    title: 'Deep Upholstery Clean',
-    caption: 'Spotless seats, restored carpets and fresh scent'
+    src: '/work-alloy-wheel.png',
+    title: 'Alloy Wheel & Tyre Rejuvenation',
+    caption: 'Brake dust removal, acid-free wheel cleaning, and rich satin tyre dressing'
   }
 ];
 
 const coverageAreas = [
-  'Inishowen Peninsula',
-  'Buncrana',
-  'Carndonagh',
-  'Moville',
-  'Clonmany',
-  'Derry / Londonderry',
-  'Letterkenny',
-  'Ballybofey',
-  'Newtowncunningham'
+  'Killarney',
+  'Tralee',
+  'Killorglin',
+  'Castleisland',
+  'Milltown',
+  'Beaufort',
+  'Farranfore',
+  'Kenmare',
+  'County Kerry'
 ];
 
 function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
-  const [selectedService, setSelectedService] = useState('Full Signature Valet');
+  const [selectedService, setSelectedService] = useState('VD Full Valet');
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
     location: '',
     vehicle: '',
-    service: 'Full Signature Valet',
+    service: 'VD Full Valet',
     date: ''
   });
 
@@ -169,8 +176,8 @@ function App() {
   const handleFormSubmit = (e) => {
     e.preventDefault();
     setFormSubmitted(true);
-    const msg = `Hi Inishowen Valeting! My name is ${formData.name || 'a customer'}. I would like to book a ${formData.service} for my ${formData.vehicle || 'car'} in ${formData.location || 'Donegal/Derry'}. My phone is ${formData.phone || ''}.`;
-    const targetUrl = `https://wa.me/353879512170?text=${encodeURIComponent(msg)}`;
+    const msg = `Hi VD Detailing! My name is ${formData.name || 'a customer'}. I would like to book a ${formData.service} for my ${formData.vehicle || 'car'} in ${formData.location || 'Kerry'}. My phone is ${formData.phone || ''}.`;
+    const targetUrl = `https://wa.me/353874427249?text=${encodeURIComponent(msg)}`;
     window.open(targetUrl, '_blank');
   };
 
@@ -179,9 +186,9 @@ function App() {
       {/* Top Announcement Bar */}
       <div className="top-banner">
         <div className="top-banner-inner">
-          <span className="brand-badge">INISHOWEN VALETING</span>
+          <span className="brand-badge">VD DETAILING</span>
           <span className="banner-tagline">
-            📍 Mobile Valeting & Detailing · Inishowen · Derry · Letterkenny · <em>We Come To You</em>
+            📍 Mobile Detailing in Kerry (Killarney / Tralee) · Certified & Insured · <em>We Come To You!</em>
           </span>
           <a href={PHONE_TEL} className="top-phone">
             <Phone size={13} /> {PHONE_DISPLAY}
@@ -193,10 +200,10 @@ function App() {
       <header className="site-header">
         <div className="header-inner">
           <a href="#top" className="brand-logo">
-            <img src="/inishowen-logo.png" alt="Inishowen Valeting Logo" />
+            <img src="/vd-logo.png" alt="VD Detailing Logo" />
             <div className="brand-text">
-              <span className="brand-name">INISHOWEN</span>
-              <span className="brand-sub">VALETING</span>
+              <span className="brand-name">VD DETAILING</span>
+              <span className="brand-sub">WASH & POLISH SPECIALISTS</span>
             </div>
           </a>
 
@@ -241,8 +248,8 @@ function App() {
         <section className="hero-section">
           <div className="hero-bg-wrapper">
             <img 
-              src="/inishowen-hero.jpg" 
-              alt="Luxury car detailed on scenic Irish driveway" 
+              src="/work-jaguar-vd-detailing.png" 
+              alt="VD Detailing Jaguar finished with showroom shine in Killarney" 
               className="hero-bg-image" 
             />
             <div className="hero-gradient-overlay"></div>
@@ -251,7 +258,7 @@ function App() {
           <div className="hero-content">
             <div className="hero-eyebrow">
               <span className="dot-pulse"></span>
-              MOBILE VALETING & DETAILING · INISHOWEN · DERRY · LETTERKENNY
+              CERTIFIED & INSURED MOBILE DETAILING · KILLARNEY · TRALEE · KERRY
             </div>
 
             <h1 className="hero-title">
@@ -260,7 +267,7 @@ function App() {
             </h1>
 
             <p className="hero-lead">
-              Professional mobile vehicle care brought directly to your home or workplace across Inishowen, Derry, and Letterkenny. Safe wash methods, deep interior steam extraction, and long-lasting paint protection.
+              Professional mobile vehicle care brought directly to your home or workplace across Killarney, Tralee, and County Kerry. Safe scratch-free wash methods, deep interior steam extraction, and long-lasting paint protection.
             </p>
 
             <div className="hero-cta-group">
@@ -284,22 +291,22 @@ function App() {
               <div className="trust-divider">•</div>
               <div className="trust-item">
                 <ShieldCheck size={16} className="trust-icon" />
-                <span><strong>Safe Wash</strong> Swirl-Free Methods</span>
+                <span><strong>Safe Wash</strong> Scratch-Free Methods</span>
               </div>
               <div className="trust-divider">•</div>
               <div className="trust-item">
                 <MapPin size={16} className="trust-icon" />
-                <span>Donegal & Derry Border Covered</span>
+                <span>Killarney & Tralee Covered</span>
               </div>
             </div>
           </div>
 
           {/* Floating Hero Badge */}
           <div className="hero-floating-badge">
-            <img src="/inishowen-logo.png" alt="Inishowen Valeting badge" />
+            <img src="/vd-logo.png" alt="VD Detailing badge" />
             <div className="badge-details">
-              <strong>Inishowen · Derry · Letterkenny</strong>
-              <span>Fully Equipped Mobile Service</span>
+              <strong>Killarney · Tralee · Co. Kerry</strong>
+              <span>Certified Mobile Detailing Unit</span>
             </div>
           </div>
         </section>
@@ -314,7 +321,7 @@ function App() {
             <div className="strip-dot">✦</div>
             <div className="strip-item">
               <Car size={16} className="strip-icon" />
-              <span>100% MOBILE TO YOUR DOORSTEP</span>
+              <span>100% MOBILE TO YOUR HOME OR WORK</span>
             </div>
             <div className="strip-dot">✦</div>
             <div className="strip-item">
@@ -324,16 +331,16 @@ function App() {
             <div className="strip-dot">✦</div>
             <div className="strip-item">
               <MapPin size={16} className="strip-icon" />
-              <span>INISHOWEN / DERRY / LETTERKENNY</span>
+              <span>KILLARNEY / TRALEE / CO. KERRY</span>
             </div>
           </div>
         </section>
 
-        {/* The Inishowen Standard (Intro Section) */}
+        {/* The VD Standard (Intro Section) */}
         <section className="standard-section" id="about">
           <div className="standard-grid">
             <div className="standard-col-left">
-              <p className="eyebrow-tag">THE INISHOWEN STANDARD</p>
+              <p className="eyebrow-tag">THE VD DETAILING STANDARD</p>
               <h2 className="section-title">
                 Care you can<br />
                 <em>see and feel.</em>
@@ -341,10 +348,10 @@ function App() {
             </div>
             <div className="standard-col-right">
               <p className="body-lead">
-                Inishowen Valeting delivers careful, considered detailing with a finish that lasts well beyond the driveway. We believe your vehicle deserves far more than a rushed roadside sponge wash.
+                VD Detailing delivers careful, considered mobile vehicle care with a finish that lasts well beyond the driveway. We believe your vehicle deserves far more than a rushed roadside sponge wash.
               </p>
               <p className="body-sub">
-                Every service is tailored to the exact condition of your car, van, or 4x4. Using premium pH-neutral snow foams, dedicated microfibres, and high-temperature steam extraction, we protect your paintwork from scratches while restoring your cabin to spotless, hygienic comfort.
+                Every service is tailored to the exact condition of your vehicle. Using premium pH-neutral snow foams, dedicated microfibres, gentle multi-stage washes, and high-temperature steam extraction, we protect your paintwork while restoring your cabin to spotless, hygienic comfort.
               </p>
               <div className="standard-action">
                 <a href="#services" className="link-arrow">
@@ -361,28 +368,28 @@ function App() {
                 <Car size={24} />
               </div>
               <h3>We Come To You</h3>
-              <p>No waiting rooms or drop-offs. We arrive at your driveway or workplace fully equipped with professional gear.</p>
+              <p>No waiting rooms or drop-offs. We arrive at your driveway or workplace fully equipped with professional detailing equipment.</p>
             </div>
             <div className="pillar-card">
               <div className="pillar-icon-box">
                 <ShieldCheck size={24} />
               </div>
               <h3>Scratch-Free Wash</h3>
-              <p>Multi-stage pre-washes, active snow foam and two-bucket grit-guarded techniques to protect your clear coat.</p>
+              <p>Multi-stage pre-washes, active snow foam and two-bucket grit-guarded techniques to protect your paint's clear coat.</p>
             </div>
             <div className="pillar-card">
               <div className="pillar-icon-box">
                 <Sparkles size={24} />
               </div>
               <h3>Interior Deep Reset</h3>
-              <p>Deep extraction wet shampoo on upholstery, steam sanitisation of touchpoints, and UV protection for plastics.</p>
+              <p>Deep wet shampoo extraction on upholstery, steam sanitisation of touchpoints, leather care, and odour elimination.</p>
             </div>
             <div className="pillar-card">
               <div className="pillar-icon-box">
                 <Clock size={24} />
               </div>
-              <h3>Flexible & Fast Booking</h3>
-              <p>Book directly by phone, WhatsApp, or request online. Fast confirmation tailored to your personal schedule.</p>
+              <h3>Fast & Direct Booking</h3>
+              <p>Book directly by phone, WhatsApp, or request online. Fast confirmation tailored around your personal schedule.</p>
             </div>
           </div>
         </section>
@@ -396,7 +403,7 @@ function App() {
               <em>level of care.</em>
             </h2>
             <p className="section-desc">
-              From a crisp maintenance wash to an intensive inside-and-out transformation, there’s a bespoke package for every vehicle.
+              From a safe exterior wash to an intensive full valet or multi-stage paint correction, we provide premium mobile car care across Kerry.
             </p>
           </div>
 
@@ -407,7 +414,7 @@ function App() {
                 className={`service-card ${service.popular ? 'is-popular' : ''}`}
               >
                 {service.popular && (
-                  <div className="popular-badge">MOST POPULAR</div>
+                  <div className="popular-badge">BEST VALUE</div>
                 )}
                 <div className="service-card-top">
                   <span className="service-number">{service.no}</span>
@@ -453,93 +460,104 @@ function App() {
               <em>finish for your vehicle.</em>
             </h2>
             <p className="section-desc text-silver">
-              Transparent rates based on vehicle size and condition. Every booking is confirmed clearly before work begins.
+              Transparent rates based on vehicle size. Certified & insured mobile car care delivered right to your location.
             </p>
           </div>
 
           <div className="pricing-container">
             <div className="pricing-columns-grid">
-              {/* Column 1: Exterior & Mini */}
+              {/* Column 1: Exterior & Interior */}
               <div className="price-box">
                 <div className="price-box-header">
-                  <h3>Exterior Detailing</h3>
-                  <p className="price-box-sub">Safe wash, wheel clean, decontamination & ceramic sealant.</p>
+                  <h3>Exterior Safe Wash</h3>
+                  <p className="price-box-sub">Snow foam pre-wash, 2-bucket wash, wheel & arch clean, spray wax & tyre dressing.</p>
                 </div>
                 <div className="price-row-list">
                   <div className="price-row">
-                    <span>Small Car (Hatchback, Polo, Fiesta)</span>
-                    <strong>€30</strong>
+                    <span>Small Car (Polo, Fiesta, Yaris)</span>
+                    <strong>From €40</strong>
                   </div>
                   <div className="price-row">
-                    <span>Medium Car (Saloon, Golf, 3 Series)</span>
-                    <strong>€35</strong>
+                    <span>Saloon / SUV (3 Series, Golf, C-Class, Tucson)</span>
+                    <strong>From €50</strong>
                   </div>
                   <div className="price-row">
-                    <span>Large Car / SUV / Estate / 4x4</span>
-                    <strong>€40</strong>
+                    <span>7-Seater / Commercial Van</span>
+                    <strong>From €60</strong>
                   </div>
                 </div>
 
                 <div className="price-box-header mt-lg">
-                  <h3>Mini Valet</h3>
-                  <p className="price-box-sub">Maintenance clean: exterior foam wash + interior vacuum & wipe.</p>
+                  <h3>Interior Deep Clean</h3>
+                  <p className="price-box-sub">Full vacuum, wet shampoo, leather clean/care, steam sanitize & odour elimination.</p>
                 </div>
                 <div className="price-row-list">
                   <div className="price-row">
                     <span>Small Car</span>
-                    <strong>€45</strong>
+                    <strong>From €80</strong>
                   </div>
                   <div className="price-row">
-                    <span>Medium Car</span>
-                    <strong>€50</strong>
+                    <span>Saloon / SUV</span>
+                    <strong>From €100</strong>
                   </div>
                   <div className="price-row">
-                    <span>Large Car / SUV</span>
-                    <strong>€55</strong>
+                    <span>7-Seater / Commercial Van</span>
+                    <strong>From €120</strong>
+                  </div>
+                  <div className="price-row">
+                    <span>Pet Hair Removal (Add-on)</span>
+                    <strong>+€20 Extra</strong>
                   </div>
                 </div>
               </div>
 
-              {/* Column 2: Interior & Full Valet */}
+              {/* Column 2: Full Valet & Paint Correction */}
               <div className="price-box featured-price-box">
                 <div className="price-box-header">
-                  <h3>Interior Deep Reset</h3>
-                  <p className="price-box-sub">Full shampoo extraction, steam sanitisation & leather care.</p>
+                  <div className="flex-title-badge">
+                    <h3>VD Full Valet</h3>
+                    <span className="badge-pill">Best Value · Save Money</span>
+                  </div>
+                  <p className="price-box-sub">Exterior Safe Wash + Interior Deep Clean + Deep door jambs + Extra gloss finish.</p>
                 </div>
                 <div className="price-row-list">
-                  <div className="price-row">
+                  <div className="price-row highlight-row">
                     <span>Small Car</span>
-                    <strong>€55</strong>
+                    <strong>From €110</strong>
                   </div>
-                  <div className="price-row">
-                    <span>Medium Car</span>
-                    <strong>€65</strong>
+                  <div className="price-row highlight-row">
+                    <span>Saloon / SUV</span>
+                    <strong>From €140</strong>
                   </div>
-                  <div className="price-row">
-                    <span>Large Car / 7-Seater / SUV</span>
-                    <strong>€75</strong>
+                  <div className="price-row highlight-row">
+                    <span>7-Seater / Commercial Van</span>
+                    <strong>From €170</strong>
                   </div>
                 </div>
 
                 <div className="price-box-header mt-lg">
                   <div className="flex-title-badge">
-                    <h3>Full Signature Valet</h3>
-                    <span className="badge-pill">Complete Transformation</span>
+                    <h3>Paint Correction & Enhancements</h3>
+                    <span className="badge-pill">Ultimate Gloss</span>
                   </div>
-                  <p className="price-box-sub">Bumper-to-bumper deep exterior detail and full interior reset.</p>
+                  <p className="price-box-sub">Machine polishing, swirl reduction, headlight clarity & ceramic protection.</p>
                 </div>
                 <div className="price-row-list">
-                  <div className="price-row highlight-row">
-                    <span>Small Car</span>
-                    <strong>€80</strong>
+                  <div className="price-row">
+                    <span>Headlight Restoration (Clear & Safe)</span>
+                    <strong>From €40</strong>
                   </div>
-                  <div className="price-row highlight-row">
-                    <span>Medium Car</span>
-                    <strong>€95</strong>
+                  <div className="price-row">
+                    <span>1-Step Polish (Swirl removal & gloss)</span>
+                    <strong>From €140</strong>
                   </div>
-                  <div className="price-row highlight-row">
-                    <span>Large Car / SUV / 4x4</span>
-                    <strong>€110</strong>
+                  <div className="price-row">
+                    <span>2-Step Polish (Deep scratch removal)</span>
+                    <strong>From €250</strong>
+                  </div>
+                  <div className="price-row">
+                    <span>Ceramic Coating Application</span>
+                    <strong>+€80 Extra</strong>
                   </div>
                 </div>
               </div>
@@ -547,37 +565,37 @@ function App() {
 
             {/* Extras / Add-on Services */}
             <div className="pricing-extras-card">
-              <h3 className="extras-title">Specialist Add-On Treatments</h3>
+              <h3 className="extras-title">Service Highlights & Add-Ons</h3>
               <div className="extras-grid">
                 <div className="extra-item">
-                  <span className="extra-name">Leather Seats Conditioned & Protected</span>
+                  <span className="extra-name">Pet Hair Removal Treatment</span>
                   <b className="extra-cost">+€20</b>
                 </div>
                 <div className="extra-item">
-                  <span className="extra-name">Heavy Upholstery & Carpet Wet Shampoo</span>
-                  <b className="extra-cost">+€25</b>
+                  <span className="extra-name">Ceramic Coating (Long-Lasting Protection)</span>
+                  <b className="extra-cost">+€80</b>
                 </div>
                 <div className="extra-item">
-                  <span className="extra-name">Pet Hair & Sand Deep Extraction</span>
-                  <b className="extra-cost">+€15</b>
+                  <span className="extra-name">Headlight Restoration (Pair)</span>
+                  <b className="extra-cost">From €40</b>
                 </div>
                 <div className="extra-item">
-                  <span className="extra-name">Hand-Applied High Gloss Ceramic Wax</span>
-                  <b className="extra-cost">+€25</b>
+                  <span className="extra-name">Deep Door Jamb & Shut Detailing</span>
+                  <b className="extra-cost">Included in Full Valet</b>
                 </div>
                 <div className="extra-item">
-                  <span className="extra-name">Engine Bay Clean & Detail</span>
-                  <b className="extra-cost">+€30</b>
+                  <span className="extra-name">1-Step Machine Enhancement</span>
+                  <b className="extra-cost">From €140</b>
                 </div>
                 <div className="extra-item">
-                  <span className="extra-name">Commercial Van / Fleet Pricing</span>
-                  <b className="extra-cost">Quote</b>
+                  <span className="extra-name">Custom Fleet / Commercial Quote</span>
+                  <b className="extra-cost">Enquire</b>
                 </div>
               </div>
             </div>
 
             <div className="pricing-note">
-              <p>*Prices may vary depending on vehicle condition, heavy mud, or excessive pet hair. Dual currency (Euro € / Sterling £) accepted across Derry and Donegal border areas.</p>
+              <p>⚠️ <strong>Requirements:</strong> We need access to a Water Tap & Power Socket. Final paint correction price depends on vehicle paint condition. Send a photo of your car for a free instant quote!</p>
             </div>
 
             <div className="pricing-cta-center">
@@ -609,7 +627,7 @@ function App() {
                 className="btn-instagram"
               >
                 <InstagramIcon size={18} />
-                <span>Follow @inishowenvaleting on Instagram</span>
+                <span>Follow @_vd_detailing on Instagram</span>
                 <ExternalLink size={14} />
               </a>
             </div>
@@ -628,7 +646,7 @@ function App() {
                   loading="lazy" 
                 />
                 <div className="gallery-overlay">
-                  <span className="gallery-badge">{item.featured ? 'Client Spotlight' : 'Inishowen Detail'}</span>
+                  <span className="gallery-badge">{item.featured ? 'Client Spotlight' : 'VD Detailing'}</span>
                   <h4 className="gallery-card-title">{item.title}</h4>
                   <p className="gallery-card-caption">{item.caption}</p>
                 </div>
@@ -642,7 +660,7 @@ function App() {
           <div className="about-grid">
             <div className="about-image-wrapper">
               <div className="about-logo-frame">
-                <img src="/inishowen-logo.png" alt="Inishowen Valeting Official Badge" />
+                <img src="/vd-logo.png" alt="VD Detailing Official Badge" />
               </div>
               <div className="about-stat-card">
                 <strong>100%</strong>
@@ -651,16 +669,16 @@ function App() {
             </div>
 
             <div className="about-content">
-              <p className="eyebrow-tag">ABOUT INISHOWEN VALETING</p>
+              <p className="eyebrow-tag">ABOUT VD DETAILING</p>
               <h2 className="section-title">
                 Professional care.<br />
                 <em>Personal service.</em>
               </h2>
               <p className="body-lead">
-                Based in the heart of Inishowen and serving drivers across County Donegal and Derry City, Inishowen Valeting is built on honest craftsmanship and relentless attention to detail.
+                Based in County Kerry and serving drivers across Killarney, Tralee, and surrounding areas, VD Detailing is built on certified expertise, honest craftsmanship, and relentless attention to detail.
               </p>
               <p className="body-sub">
-                We believe your vehicle is a significant investment. Rather than rushing through cars with harsh, abrasive chemicals, we bring modern detailing techniques and gentle, high-grade products directly to your driveway. You get the convenience of carrying on with your day while your vehicle is restored to showroom condition.
+                We believe your vehicle is a significant investment. Rather than rushing through cars with harsh, abrasive chemicals, we bring modern detailing techniques, snow foam pre-washes, high-temperature steam extraction, and machine polishing directly to your doorstep. You enjoy your day at home or work while your car is restored to showroom perfection.
               </p>
 
               <div className="about-contact-links">
@@ -673,7 +691,7 @@ function App() {
                   rel="noopener noreferrer" 
                   className="about-btn-ig"
                 >
-                  <InstagramIcon size={16} /> Instagram PM ↗
+                  <InstagramIcon size={16} /> Instagram DM ↗
                 </a>
               </div>
             </div>
@@ -687,11 +705,11 @@ function App() {
               <MapPin size={28} className="coverage-icon" />
               <div>
                 <p className="eyebrow-tag light-cyan">WHERE WE OPERATE</p>
-                <h3 className="coverage-title">Mobile valeting across Inishowen, Derry & Letterkenny</h3>
+                <h3 className="coverage-title">Mobile Detailing Across Killarney, Tralee & Kerry</h3>
               </div>
             </div>
             <p className="coverage-desc">
-              We travel to your home, workplace, or business. Don't see your specific town listed below? Give us a quick call to check our schedule.
+              We travel directly to your home or workplace across County Kerry. Don't see your specific town listed below? Give us a quick call or message on WhatsApp to check our schedule.
             </p>
             <div className="area-tags-grid">
               {coverageAreas.map((area, idx) => (
@@ -710,10 +728,10 @@ function App() {
             <p className="cta-eyebrow">READY FOR A SHOWROOM REFRESH?</p>
             <h2 className="cta-heading">
               Your car deserves the<br />
-              <em>Inishowen Valeting touch.</em>
+              <em>VD Detailing touch.</em>
             </h2>
             <p className="cta-sub">
-              Call, message on WhatsApp, or send an enquiry below. We’ll get back to you immediately with availability.
+              Call, message on WhatsApp, or send an enquiry below. We’ll get back to you promptly with availability for your vehicle.
             </p>
             <div className="cta-buttons">
               <button className="btn-cta-white" onClick={() => handleOpenBooking()}>
@@ -735,14 +753,14 @@ function App() {
         <div className="footer-container">
           <div className="footer-col-brand">
             <div className="footer-brand-header">
-              <img src="/inishowen-logo.png" alt="Inishowen Valeting" />
+              <img src="/vd-logo.png" alt="VD Detailing" />
               <div className="footer-brand-title">
-                <span>INISHOWEN</span>
-                <small>VALETING</small>
+                <span>VD DETAILING</span>
+                <small>WASH & POLISH SPECIALISTS</small>
               </div>
             </div>
             <p className="footer-brand-desc">
-              Premium mobile vehicle valeting and detailing across Inishowen Peninsula, Derry City, and Letterkenny. Safe washing, interior steam resets, and paint protection brought directly to you.
+              Certified & insured mobile car valeting and detailing across Killarney, Tralee, and County Kerry. Scratch-free washing, interior steam resets, paint correction, and protection brought directly to you.
             </p>
             <div className="footer-socials">
               <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" aria-label="Instagram">
@@ -772,20 +790,20 @@ function App() {
               <MessageCircle size={15} /> Message on WhatsApp
             </a>
             <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="footer-contact-item">
-              <InstagramIcon size={15} /> @inishowenvaleting
+              <InstagramIcon size={15} /> @_vd_detailing
             </a>
             <span className="footer-contact-item location-item">
-              <MapPin size={15} /> Inishowen / Derry / Letterkenny
+              <MapPin size={15} /> Killarney / Tralee / Co. Kerry
             </span>
           </div>
         </div>
 
         <div className="footer-bottom-bar">
-          <p>© {new Date().getFullYear()} Inishowen Valeting. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} VD Detailing. All rights reserved.</p>
           <div className="footer-bottom-links">
-            <span>Mobile Detailing Specialist</span>
+            <span>Mobile Detailing Specialists</span>
             <span>•</span>
-            <span>Donegal & Derry</span>
+            <span>Killarney & Tralee, Kerry</span>
           </div>
         </div>
       </footer>
@@ -794,7 +812,7 @@ function App() {
       <div className="mobile-floating-bar">
         <a href={PHONE_TEL} className="floating-call-btn">
           <Phone size={18} />
-          <span>Call 087 951 2170</span>
+          <span>Call 087 442 7249</span>
         </a>
         <button className="floating-book-btn" onClick={() => handleOpenBooking()}>
           <Calendar size={18} />
@@ -818,7 +836,7 @@ function App() {
               <div className="modal-success">
                 <CheckCircle2 size={48} className="success-icon" />
                 <h3>Booking Request Received!</h3>
-                <p>We've launched WhatsApp to confirm your date and vehicle details directly. If it didn't open automatically, tap below:</p>
+                <p>We've launched WhatsApp to confirm your date, location, and vehicle details directly with VD Detailing. If it didn't open automatically, tap below:</p>
                 <a href={WHATSAPP_LINK} className="btn-primary full-width mt-md" target="_blank" rel="noopener noreferrer">
                   Open WhatsApp Chat
                 </a>
@@ -833,7 +851,7 @@ function App() {
                   Let's get your car<br /><em>looking its best.</em>
                 </h3>
                 <p className="modal-sub">
-                  Provide your details below and we will confirm our availability for your doorstep valet across Inishowen, Derry or Letterkenny.
+                  Provide your details below and we will confirm our availability for your doorstep valet across Killarney, Tralee, or County Kerry.
                 </p>
 
                 <form onSubmit={handleFormSubmit} className="modal-form">
@@ -842,7 +860,7 @@ function App() {
                     <input 
                       type="text" 
                       name="name" 
-                      placeholder="e.g. Liam Doherty" 
+                      placeholder="e.g. John O'Connor" 
                       required 
                       value={formData.name} 
                       onChange={handleFormChange}
@@ -862,11 +880,11 @@ function App() {
                       />
                     </div>
                     <div className="form-group">
-                      <label>Town / Area</label>
+                      <label>Town / Location in Kerry</label>
                       <input 
                         type="text" 
                         name="location" 
-                        placeholder="e.g. Buncrana / Derry" 
+                        placeholder="e.g. Killarney / Tralee" 
                         required 
                         value={formData.location} 
                         onChange={handleFormChange}
@@ -880,23 +898,23 @@ function App() {
                       <input 
                         type="text" 
                         name="vehicle" 
-                        placeholder="e.g. BMW 4 Series / Ford Kuga" 
+                        placeholder="e.g. BMW 4 Series / Hyundai Tucson" 
                         required 
                         value={formData.vehicle} 
                         onChange={handleFormChange}
                       />
                     </div>
                     <div className="form-group">
-                      <label>Select Valet Service</label>
+                      <label>Select Detailing Service</label>
                       <select 
                         name="service" 
                         value={formData.service} 
                         onChange={handleFormChange}
                       >
-                        <option value="Full Signature Valet">Full Signature Valet (From €80)</option>
-                        <option value="Mini Valet">Mini Valet (From €45)</option>
-                        <option value="Interior Deep Reset">Interior Deep Reset (From €55)</option>
-                        <option value="Exterior Detailing">Exterior Detailing (From €30)</option>
+                        <option value="VD Full Valet">VD Full Valet (From €110) [Best Value]</option>
+                        <option value="Interior Deep Clean">Interior Deep Clean (From €80)</option>
+                        <option value="Exterior Safe Wash">Exterior Safe Wash (From €40)</option>
+                        <option value="Paint Correction & Polishing">Paint Correction & Polishing (From €140)</option>
                       </select>
                     </div>
                   </div>
@@ -906,7 +924,7 @@ function App() {
                     <input 
                       type="text" 
                       name="date" 
-                      placeholder="e.g. Next Tuesday morning / Any weekday" 
+                      placeholder="e.g. This Saturday morning / Any weekday" 
                       value={formData.date} 
                       onChange={handleFormChange}
                     />
