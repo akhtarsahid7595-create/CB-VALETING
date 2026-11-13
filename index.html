@@ -1,17 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-GB">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Scrub Bros | Mobile Car Valeting & Detailing · Ilminster, Somerset</title>
-    <meta name="description" content="Scrub Bros — Professional mobile vehicle valeting & detailing in Ilminster, Somerset and surrounding areas. Life's Better Shiny! Safe exterior wash, interior deep steam clean, and showroom finishes brought directly to you." />
-    <link rel="icon" type="image/png" href="/scrub-bros-round-logo.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Playfair+Display:ital,wght@0,600..900;1,600..900&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <title>HI Automotive Car Care | Premium Car Detailing West Midlands</title>
+    <meta name="description" content="Premium interior and exterior car detailing, paint enhancement and ceramic protection from HI Automotive Car Care in the West Midlands." />
+    <meta property="og:title" content="HI Automotive Car Care" />
+    <meta property="og:description" content="Where precision meets perfection. Premium car detailing in the West Midlands." />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="HI Automotive Car Care home">
+        <span class="brand-art"><img src="assets/hi-brand.png" alt="HI Automotive Car Care crest" /></span>
+        <span class="brand-text"><strong>HI</strong><span>AUTOMOTIVE<br />CAR CARE</span></span>
+      </a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="#about">About</a><a href="#services">Services</a><a href="#packages">Packages</a><a href="#addons">Add-ons</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
+      </nav>
+      <a class="button button-small" href="#contact">Book your detailing <span>↗</span></a>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">HI AUTOMOTIVE CAR CARE <span>·</span> WEST MIDLANDS</p>
+          <h1 id="hero-title">Where precision<br /><em>meets perfection.</em></h1>
+          <p class="hero-lede">Premium car detailing. Exceptional attention to every detail.</p>
+          <p class="hero-body">From deep interior detailing to paint enhancement and ceramic protection, we give your vehicle the care it deserves.</p>
+          <div class="hero-actions"><a class="button" href="#contact">Book your detailing <span>↗</span></a><a class="text-link" href="tel:+447707399734">Call 07707 399734 <span>↗</span></a></div>
+        </div>
+        <div class="hero-image"><div class="hero-image-note"><span class="gold-dot"></span> Premium interior &amp; exterior car care</div></div>
+        <div class="hero-meta"><span>01</span><span class="line"></span><span>Precision in every detail</span></div>
+      </section>
+
+      <section class="intro section" id="about">
+        <div class="intro-image image-frame"><img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c7?auto=format&fit=crop&w=1200&q=85" alt="Black luxury car with refined paintwork" loading="lazy" /></div>
+        <div class="intro-copy reveal"><p class="eyebrow">THE HI STANDARD</p><h2>Automotive care<br /><em>without compromise.</em></h2><p>At HI Automotive Car Care, every vehicle deserves attention to detail. Whether you are refreshing the interior, refining the exterior finish or adding an extra layer of protection, our detailing services are built around careful work and a proper finish.</p><a class="text-link" href="#services">Explore our services <span>↗</span></a></div>
+      </section>
+
+      <section class="services section" id="services"><div class="section-heading"><div><p class="eyebrow">WHAT WE DO</p><h2>Complete care.<br /><em>Every detail considered.</em></h2></div><p>Focused detailing for the parts of your vehicle that matter most — from the cabin to the paintwork.</p></div>
+        <div class="service-layout"><div class="service-feature image-frame"><img src="https://images.unsplash.com/photo-1613214150384-0a6d5abf56a5?auto=format&fit=crop&w=1300&q=85" alt="Detailer polishing a vehicle" loading="lazy" /><div class="image-caption">01 / Paint enhancement</div></div><div class="service-list">
+          <article><span>01</span><div><h3>Interior detailing</h3><p>Carpets, upholstery, leather, dashboard and interior surfaces cleaned with care.</p></div><b>↗</b></article>
+          <article><span>02</span><div><h3>Exterior detailing</h3><p>Professional washing, decontamination and finishing treatments for a refined finish.</p></div><b>↗</b></article>
+          <article><span>03</span><div><h3>Paint enhancement</h3><p>Gloss-focused paintwork treatments that help your vehicle look its best.</p></div><b>↗</b></article>
+          <article><span>04</span><div><h3>Ceramic protection</h3><p>Additional surface protection designed to enhance and preserve the finish.</p></div><b>↗</b></article>
+        </div></div>
+      </section>
+
+      <section class="packages section" id="packages"><div class="section-heading"><div><p class="eyebrow">DETAILING PACKAGES</p><h2>Choose your level<br /><em>of care.</em></h2></div><p>Four considered packages, from an essential refresh to our most comprehensive detail.</p></div>
+        <div class="package-grid">
+          <article class="package"><p class="package-number">01 / Essential</p><h3>Essential valet</h3><div class="price">£40</div><p class="package-desc">A complete essential valet to refresh your vehicle inside and out.</p><ul><li>Exterior hand wash</li><li>Snow foam pre-wash</li><li>Wheels and tyres cleaned</li><li>Interior vacuum</li><li>Dashboard and plastics cleaned</li><li>Glass cleaned inside and out</li><li>Tyre dressing</li></ul><button class="package-button" data-package="Essential Valet — £40">Book essential valet <span>↗</span></button></article>
+          <article class="package"><p class="package-number">02 / Complete</p><h3>Complete valet</h3><div class="price">£60</div><p class="package-desc">Deeper cleaning and enhanced finishing for the interior and exterior.</p><ul><li>Everything in Essential</li><li>Deeper interior clean</li><li>Carpets cleaned</li><li>Door panels and trims detailed</li><li>Door shuts cleaned</li><li>Iron fallout treatment</li><li>Enhanced exterior finish</li></ul><button class="package-button" data-package="Complete Valet — £60">Book complete valet <span>↗</span></button></article>
+          <article class="package featured"><p class="package-number">03 / Premium <span>Most chosen</span></p><h3>Premium detail</h3><div class="price">£85</div><p class="package-desc">Deep cleaning, paint preparation and additional protection.</p><ul><li>Everything in Complete</li><li>Deep interior detail</li><li>Tar removal &amp; paint decontamination</li><li>Detailed wheel and tyre clean</li><li>Exterior protection</li><li>Glass sealant applied</li><li>3-month ceramic protection</li></ul><button class="package-button" data-package="Premium Detail — £85">Book premium detail <span>↗</span></button></article>
+          <article class="package"><p class="package-number">04 / Ultimate</p><h3>Ultimate detail</h3><div class="price">£120</div><p class="package-desc">The most comprehensive option for extensive interior and exterior care.</p><ul><li>Everything in all 3 packages</li><li>Deep carpet and upholstery extraction</li><li>Wet seat cleaning — dried after</li><li>Leather deep clean and treatment</li><li>Engine bay detail</li><li>Premium paint protection</li><li>3-month ceramic coating</li><li>Interior steam clean</li></ul><button class="package-button" data-package="Ultimate Detail — £120">Book ultimate detail <span>↗</span></button></article>
+        </div>
+      </section>
+
+      <section class="addons section" id="addons"><div class="addons-heading"><p class="eyebrow">ADDITIONAL SERVICES</p><h2>Take your detailing<br /><em>further.</em></h2><p>Need something extra? Add focused treatments to your chosen package and make the finish your own.</p></div><div class="addon-list"><div><span>01</span><strong>Engine bay detailing</strong><b>From £15</b></div><div><span>02</span><strong>Pet hair removal</strong><b>From £15</b></div><div><span>03</span><strong>Leather treatment</strong><b>From £15</b></div><div><span>04</span><strong>Extra protection</strong><b>From £15</b></div><div><span>05</span><strong>Interior steam clean</strong><b>From £30</b></div><div><span>06</span><strong>Polish glaze wax</strong><b>£45</b></div></div></section>
+
+      <section class="statement section"><div class="statement-mark">“</div><div><p class="eyebrow">WHY HI AUTOMOTIVE</p><h2>Good detailing is<br /><em>felt in the finish.</em></h2><p>From the first wash to the final inspection, every step is about careful preparation, honest guidance and a finish you can see from every angle.</p><a class="text-link" href="#contact">Start a conversation <span>↗</span></a></div><div class="statement-image image-frame"><img src="https://images.unsplash.com/photo-1619405399517-d7fce0f13302?auto=format&fit=crop&w=900&q=85" alt="Close-up of polished black vehicle detail" loading="lazy" /></div></section>
+
+      <section class="gallery section" id="gallery"><div class="section-heading"><div><p class="eyebrow">RECENT WORK</p><h2>Precision you<br /><em>can see.</em></h2></div><p>A glimpse at recent vehicle details completed with care.</p></div><div class="gallery-grid"><div class="gallery-tile tall"><img src="assets/work-rear-detail.png" alt="Recent work on a black Mercedes vehicle" loading="lazy" /></div><div class="gallery-tile"><img src="assets/work-interior-detail.png" alt="Recent interior detailing work" loading="lazy" /></div><div class="gallery-tile"><img src="assets/work-wheel-detail.png" alt="Recent wheel detailing work" loading="lazy" /></div><div class="gallery-tile wide"><img src="assets/work-wheel-finish.png" alt="Recent alloy wheel finish" loading="lazy" /></div></div></section>
+
+      <section class="contact section" id="contact"><div class="contact-copy"><p class="eyebrow">BOOKING ENQUIRY</p><h2>Ready to give your<br /><em>vehicle the HI treatment?</em></h2><p>Tell us about your vehicle and the service you are interested in. We will help you find the right level of care.</p><div class="contact-details"><a href="tel:+447707399734"><span>Call directly</span>07707 399734 ↗</a><a href="https://wa.me/447707399734" target="_blank" rel="noopener"><span>WhatsApp enquiry</span>Start a conversation ↗</a></div></div><form id="booking-form" class="booking-form"><div class="form-row"><label>First name<input name="firstName" required /></label><label>Last name<input name="lastName" required /></label></div><div class="form-row"><label>Phone number<input name="phone" type="tel" required /></label><label>Email address<input name="email" type="email" required /></label></div><div class="form-row"><label>Vehicle make<input name="make" placeholder="e.g. BMW" required /></label><label>Vehicle model<input name="model" placeholder="e.g. M4" required /></label></div><label>Selected package<select name="package" id="package-select" required><option value="">Choose a package</option><option>Essential Valet — £40</option><option>Complete Valet — £60</option><option>Premium Detail — £85</option><option>Ultimate Detail — £120</option><option>Not sure — help me choose</option></select></label><label>Additional service<select name="addon"><option>No additional service</option><option>Engine Bay Detailing</option><option>Pet Hair Removal</option><option>Leather Treatment</option><option>Extra Protection</option><option>Interior Steam Clean</option><option>Polish Glaze Wax</option></select></label><label>Message<textarea name="message" rows="3" placeholder="Tell us anything useful about your vehicle..."></textarea></label><button class="button" type="submit">Request your booking <span>↗</span></button><p class="form-note">Your enquiry will open in WhatsApp, ready to send to HI Automotive Car Care.</p></form></section>
+    </main>
+    <footer class="site-footer"><div class="footer-brand"><div class="brand"><span class="brand-art"><img src="assets/hi-brand.png" alt="HI Automotive Car Care crest" /></span><span class="brand-text"><strong>HI</strong><span>AUTOMOTIVE<br />CAR CARE</span></span></div><p>Where precision meets perfection.</p></div><div><p class="footer-label">Explore</p><a href="#about">About</a><a href="#services">Services</a><a href="#packages">Packages</a><a href="#gallery">Gallery</a></div><div><p class="footer-label">Services</p><a href="#services">Interior detailing</a><a href="#services">Exterior detailing</a><a href="#services">Paint enhancement</a><a href="#addons">Ceramic protection</a></div><div><p class="footer-label">Contact</p><a href="tel:+447707399734">07707 399734</a><span>West Midlands, UK</span><a class="footer-cta" href="#contact">Book your detailing ↗</a></div><div class="footer-bottom"><span>© 2025 HI Automotive Car Care</span><span>Precision. Protection. Perfection.</span></div></footer>
+    <script src="script.js"></script>
   </body>
 </html>
